@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class TextFieldViewController: UIViewController {
 
@@ -28,6 +29,7 @@ class TextFieldViewController: UIViewController {
 
 extension TextFieldViewController {
     private func bindRx() {
+        
         self.loginButton.rx.tap.subscribe(onNext: {
             
         }).disposed(by: disposeBag)
