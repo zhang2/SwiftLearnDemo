@@ -17,7 +17,8 @@
 		180AC5D8243C23D5008C6E0A /* SwiftLearnDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AC5D7243C23D5008C6E0A /* SwiftLearnDemoTests.swift */; };
 		180AC5E3243C23D5008C6E0A /* SwiftLearnDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AC5E2243C23D5008C6E0A /* SwiftLearnDemoUITests.swift */; };
 		180AC5F0243C2DCB008C6E0A /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AC5C4243C23D1008C6E0A /* TextFieldViewController.swift */; };
-		180AC5F5243C7F4E008C6E0A /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AC5F4243C7F4E008C6E0A /* SignInViewModel.swift */; };
+		187D3F51243DBC1B00B19CD6 /* RxListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D3F50243DBC1B00B19CD6 /* RxListViewController.swift */; };
+		187D3F54243DBC7300B19CD6 /* RxCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D3F53243DBC7300B19CD6 /* RxCollectionViewController.swift */; };
 		884A7ABA1A4A9E25DAEC7DB5 /* Pods_SwiftLearnDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814A33B3B7D67C4C5D0CEE7A /* Pods_SwiftLearnDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +54,8 @@
 		180AC5DE243C23D5008C6E0A /* SwiftLearnDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLearnDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180AC5E2243C23D5008C6E0A /* SwiftLearnDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearnDemoUITests.swift; sourceTree = "<group>"; };
 		180AC5E4243C23D5008C6E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		180AC5F4243C7F4E008C6E0A /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		187D3F50243DBC1B00B19CD6 /* RxListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListViewController.swift; sourceTree = "<group>"; };
+		187D3F53243DBC7300B19CD6 /* RxCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewController.swift; sourceTree = "<group>"; };
 		3B06180A38D654B2FF9102EA /* Pods_SwiftLearnDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLearnDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DCB531FE6B73E4368AFD247 /* Pods-SwiftLearnDemo-SwiftLearnDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearnDemo-SwiftLearnDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLearnDemo-SwiftLearnDemoUITests/Pods-SwiftLearnDemo-SwiftLearnDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		54E114F2E5DE003B1B59B3DF /* Pods_SwiftLearnDemo_SwiftLearnDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLearnDemo_SwiftLearnDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,8 @@
 				180AC5C0243C23D1008C6E0A /* AppDelegate.swift */,
 				180AC5C2243C23D1008C6E0A /* SceneDelegate.swift */,
 				180AC5F1243C7EDF008C6E0A /* SimpleDemo */,
+				187D3F4F243DBBB200B19CD6 /* RxTableViewDemo */,
+				187D3F52243DBC4800B19CD6 /* RxCollectionViewDemo */,
 				180AC5C6243C23D1008C6E0A /* Main.storyboard */,
 				180AC5C9243C23D4008C6E0A /* Assets.xcassets */,
 				180AC5CB243C23D4008C6E0A /* LaunchScreen.storyboard */,
@@ -150,7 +154,6 @@
 		180AC5F1243C7EDF008C6E0A /* SimpleDemo */ = {
 			isa = PBXGroup;
 			children = (
-				180AC5F3243C7F27008C6E0A /* ViewModel */,
 				180AC5F2243C7F17008C6E0A /* ViewController */,
 			);
 			path = SimpleDemo;
@@ -164,12 +167,20 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		180AC5F3243C7F27008C6E0A /* ViewModel */ = {
+		187D3F4F243DBBB200B19CD6 /* RxTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				180AC5F4243C7F4E008C6E0A /* SignInViewModel.swift */,
+				187D3F50243DBC1B00B19CD6 /* RxListViewController.swift */,
 			);
-			path = ViewModel;
+			path = RxTableViewDemo;
+			sourceTree = "<group>";
+		};
+		187D3F52243DBC4800B19CD6 /* RxCollectionViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				187D3F53243DBC7300B19CD6 /* RxCollectionViewController.swift */,
+			);
+			path = RxCollectionViewDemo;
 			sourceTree = "<group>";
 		};
 		229999558992D043FA3000A5 /* Frameworks */ = {
@@ -434,9 +445,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180AC5F5243C7F4E008C6E0A /* SignInViewModel.swift in Sources */,
 				180AC5F0243C2DCB008C6E0A /* TextFieldViewController.swift in Sources */,
 				180AC5C1243C23D1008C6E0A /* AppDelegate.swift in Sources */,
+				187D3F54243DBC7300B19CD6 /* RxCollectionViewController.swift in Sources */,
+				187D3F51243DBC1B00B19CD6 /* RxListViewController.swift in Sources */,
 				180AC5C3243C23D1008C6E0A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
