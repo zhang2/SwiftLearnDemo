@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
-                            <tableViewSection id="6C9-On-SDk">
+                            <tableViewSection headerTitle="" id="6C9-On-SDk">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ywM-qR-0xN" style="IBUITableViewCellStyleDefault" id="o0m-kj-GBs">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -263,6 +263,9 @@
                         <viewLayoutGuide key="safeArea" id="reN-we-xpV"/>
                     </view>
                     <navigationItem key="navigationItem" title="RxCollectionView" id="jVR-rd-hjR"/>
+                    <connections>
+                        <outlet property="collectionView" destination="GaE-5s-KJb" id="fjj-Wj-jBL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0vY-dK-EDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -290,7 +293,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="67q-iU-Awp"/>
                     </view>
-                    <navigationItem key="navigationItem" title="RxTableView" id="XEn-yk-AAg"/>
+                    <navigationItem key="navigationItem" title="RxTableView" id="XEn-yk-AAg">
+                        <rightBarButtonItems>
+                            <barButtonItem title="refresh" id="pGM-Kb-CFQ"/>
+                            <barButtonItem title="stop" id="lQe-yL-HH6"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="refreshItemButton" destination="pGM-Kb-CFQ" id="4x8-rc-FND"/>
+                        <outlet property="stopItem" destination="lQe-yL-HH6" id="FAS-Iq-wbd"/>
+                        <outlet property="tableView" destination="MbN-Iw-hp7" id="uEF-di-Cr9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Az-nu-tP6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -17,6 +17,8 @@
 		180AC5D8243C23D5008C6E0A /* SwiftLearnDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AC5D7243C23D5008C6E0A /* SwiftLearnDemoTests.swift */; };
 		180AC5E3243C23D5008C6E0A /* SwiftLearnDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AC5E2243C23D5008C6E0A /* SwiftLearnDemoUITests.swift */; };
 		180AC5F0243C2DCB008C6E0A /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180AC5C4243C23D1008C6E0A /* TextFieldViewController.swift */; };
+		185892D724445D4B00959F6C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185892D624445D4B00959F6C /* ViewModel.swift */; };
+		185892D924446B0200959F6C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185892D824446B0200959F6C /* CollectionViewCell.swift */; };
 		187D3F51243DBC1B00B19CD6 /* RxListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D3F50243DBC1B00B19CD6 /* RxListViewController.swift */; };
 		187D3F54243DBC7300B19CD6 /* RxCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D3F53243DBC7300B19CD6 /* RxCollectionViewController.swift */; };
 		884A7ABA1A4A9E25DAEC7DB5 /* Pods_SwiftLearnDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814A33B3B7D67C4C5D0CEE7A /* Pods_SwiftLearnDemoTests.framework */; };
@@ -54,6 +56,8 @@
 		180AC5DE243C23D5008C6E0A /* SwiftLearnDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLearnDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180AC5E2243C23D5008C6E0A /* SwiftLearnDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearnDemoUITests.swift; sourceTree = "<group>"; };
 		180AC5E4243C23D5008C6E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185892D624445D4B00959F6C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		185892D824446B0200959F6C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		187D3F50243DBC1B00B19CD6 /* RxListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListViewController.swift; sourceTree = "<group>"; };
 		187D3F53243DBC7300B19CD6 /* RxCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCollectionViewController.swift; sourceTree = "<group>"; };
 		3B06180A38D654B2FF9102EA /* Pods_SwiftLearnDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLearnDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				187D3F53243DBC7300B19CD6 /* RxCollectionViewController.swift */,
+				185892D624445D4B00959F6C /* ViewModel.swift */,
+				185892D824446B0200959F6C /* CollectionViewCell.swift */,
 			);
 			path = RxCollectionViewDemo;
 			sourceTree = "<group>";
@@ -448,7 +454,9 @@
 				180AC5F0243C2DCB008C6E0A /* TextFieldViewController.swift in Sources */,
 				180AC5C1243C23D1008C6E0A /* AppDelegate.swift in Sources */,
 				187D3F54243DBC7300B19CD6 /* RxCollectionViewController.swift in Sources */,
+				185892D924446B0200959F6C /* CollectionViewCell.swift in Sources */,
 				187D3F51243DBC1B00B19CD6 /* RxListViewController.swift in Sources */,
+				185892D724445D4B00959F6C /* ViewModel.swift in Sources */,
 				180AC5C3243C23D1008C6E0A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
